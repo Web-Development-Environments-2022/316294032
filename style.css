@@ -1,7 +1,111 @@
 #menu
 {
 	position: fixed;
-	width: 100%;
+	width: 99%;
 	height: 35px;
-	background: white;
+	background-color: rgb(164, 109, 32);
+	border: 2px solid rgb(194, 162, 33);
+	padding-top: 15px;
+	text-align:right;
 }
+
+.section{
+	text-align:center;
+	/* Style all elements with the class name "section" */
+	background-color: rgb(239, 227, 210);
+	color: rgb(164, 109, 32);
+	padding: 10px;
+}
+
+a{
+	color: blanchedalmond;
+}
+
+  /*image gallery*/
+  .row {
+	display: flex; /*need*/
+	/* flex-wrap: wrap; */
+
+  }
+  /* Create four equal columns that sits next to each other */
+  .column {
+	flex: 100%;
+	max-width: 270px;
+	padding: 0 4px;
+  }
+  
+  .column img { 
+	margin-top: 10px; /*space from top*/
+	vertical-align:middle; /*equal space between picture in middle*/
+	width: 100%; /*width of image*/
+	text-align: center;
+  }
+
+/* Clarifying the image as a background  */
+.container:hover .image {
+	opacity: 0.3;
+  }
+
+  /*  Details about the image  */
+  .container:hover .middle {
+	opacity: 1;
+  }
+
+  .blink {
+	animation: blinker 0.6s linear infinite;
+	color: black;
+	font-size: 15px;
+	font-family: sans-serif;
+  }
+  @keyframes blinker {
+	50% {
+	  opacity: 0;
+	}
+  }
+
+ * {
+	box-sizing: border-box;
+  } 
+
+  /* The grid: Four equal columns that floats next to each other */
+  /* .column {
+	float: left;
+	width: 25%;
+	padding: 5px;
+  } */
+
+
+
+  .image {
+	opacity: 1;
+	display: block;
+	width: 80%;
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
+  }
+  .middle {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+	color: black
+	
+  }
+  .container {
+	position: relative;
+	width: 250px;
+  }
+
+
+
+  /* .text {
+	background-color: #04AA6D;
+	color: white;
+	font-size: 16px;
+	padding: 16px 32px;
+  } */
