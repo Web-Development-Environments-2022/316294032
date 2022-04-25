@@ -9,6 +9,6 @@ ID:
 Website URL address:
 https://web-development-environments-2022.github.io/316294032/
 
-In this work I created a personal website for my Grendmother Olga Abu.
+In this work I created a personal website for my grandmother Olga Abu.
 The site contains details about her: like her personal life, her family, her hobbies, photos and videos.
 
