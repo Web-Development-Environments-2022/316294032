@@ -5,9 +5,16 @@
 	height: 35px;
 	background-color: rgb(164, 109, 32);
 	border: 2px solid rgb(194, 162, 33);
-	padding-top: 15px;
-	text-align:right;
+	text-align:center;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	padding:8px 15px;
+
 }
+#menu a:hover {
+    color: rgb(6, 145, 122);
+	font-size: 18px;
+}
+
 
 .section{
 	text-align:center;
@@ -15,6 +22,16 @@
 	background-color: rgb(239, 227, 210);
 	color: rgb(164, 109, 32);
 	padding: 10px;
+	
+}
+
+.separator{
+	text-align:center;
+	/* Style all elements with the class name "section" */
+	background-color: rgb(239, 227, 210);
+	color: rgb(164, 109, 32);
+	padding: 1px;
+	
 }
 
 a{
@@ -29,11 +46,18 @@ a{
   }
   /* Create four equal columns that sits next to each other */
   .column {
-	flex: 100%;
-	max-width: 270px;
-	padding: 0 4px;
+	/* flex: 100%;
+
+	padding: 0 4px; */
+	float:left;
+	width: 2%;
+	padding: 10px;
+	display: block;
+	margin-left:100px;
+	margin-right: 130px;
   }
-  
+
+
   .column img { 
 	margin-top: 10px; /*space from top*/
 	vertical-align:middle; /*equal space between picture in middle*/
@@ -67,15 +91,6 @@ a{
 	box-sizing: border-box;
   } 
 
-  /* The grid: Four equal columns that floats next to each other */
-  /* .column {
-	float: left;
-	width: 25%;
-	padding: 5px;
-  } */
-
-
-
   .image {
 	opacity: 1;
 	display: block;
@@ -101,11 +116,21 @@ a{
 	width: 250px;
   }
 
+  .table {
+	margin-left: auto;
+	margin-right: auto;
 
-
-  /* .text {
-	background-color: #04AA6D;
-	color: white;
-	font-size: 16px;
-	padding: 16px 32px;
-  } */
+  }
+  .down {
+	color: black;
+	
+  }
+  .primary {
+	width: 180px;
+	height: 330px;
+	border: 3px solid #ccc;
+	background: #eee;
+	margin: auto;
+	padding: 15px 10px;
+  }
+ 
